@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Main page</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Лабораторна робота №1</h1>
+        <h4 style="text-align: center;">Основи побудови та публікації HTML-документів</h4>
+        <ol start="1">
+            <li >Мета роботи</li>
+            <li type="circle">Вивчити принципи побудови HTML-документа, його структуру та форматування. Розглянути можливості форматування тексту, організації списків, використання гіперпосилань, форм та графіки у web-документах. <br>
+                Познайомитись з особливостями табличного подання даних та недоліками використання невидимих таблиць для формування структури сторінки.</li>
+            <li type="circle">Ознайомитись із системою контролю версій (CКВ) Git та можливостями сервісу Github Pages.</li>
+            <li value="2">Необхідні засоби <br> 
+                <p>Для виконання лабораторної роботи рекомендується використовувати таке відкрите програмне забезпечення:</p></li>
+           
+            <li type="circle">редактор коду <strong > MC Visual Studio Code</strong> або будь-який інший, який знайомий користувачу і забезпечує підсвічування синтаксису (Notepad++, Sublime Text, Atom, Brackets и т.п.);</li>
+            <li type="circle">браузер Mozilla Firefox або Google Chrome;</li>
+            <li type="circle">СКВ <strong>GIT</strong> (для роботи з сервісом GitHub Pages потрібен доступ до мережі Інтернет).</li>
+        </ol>
+
+        <!-- -->
+        <h4 style="text-align: center">Завдання перше</h4>
+        <p>
+            <strong><i>E=mc</i><sup>2</sup> </strong>,where <strong>E</strong> - energy of the object,<br />
+            <strong>m</strong> - it's mass, <strong>c</strong> - speed of light in<br />
+            vacuum, equals to<i>299 792 458 m/s</i> 
+        </p>
+        <!---->
+        <h4 style="text-align: center">Завдання друге</h4>
+        <label for="students"
+            >Оберіть студента групи КІУКІУ-24-1
+            <select id="students">
+                <option disabled>Оберіть свою групу</option>
+                <optgroup label="kiy">
+                    <option disabled>Оберіть свою групу</option>
+                    <option>Андрієнко Максим</option>
+                    <option>Баришев Ярослав</option>
+                    <option>Власова Наталія</option>
+                    <option>Глітко Богдан</option>
+                    <option>Зданєвич Світлана</option>
+                    <option>Іванцов Олексій</option>
+                    <option>Коваленко Даниіл</option>
+                    <option>Компанієць Михайло</option>
+                    <option>Константінов Владислав</option>
+                    <option>Кривенко Нікіта</option>
+                    <option>Невдачин Михайло</option>
+                    <option>Носов Іван</option>
+                    <option>Підгорний Борис</option>
+                    <option>Погорілий Андрій</option>
+                    <option>Прохоров Микита</option>
+                    <option>Рогова Єлізавєта</option>
+                    <option>Савченко Богдан</option>
+                    <option>Сердюк Андрій</option>
+                    <option>Скуін-Стедлєр Едуард</option>
+                    <option>Соловйова Еліна</option>
+                    <option>Сподін Максим</option>
+                    <option>Тірон Андрій</option>
+                </optgroup>
+                <optgroup label="КН">
+                    <option value="">dТО</option>
+                    <option value="">jdjddj</option>
+                </optgroup>
+                <optgroup label="ІПЗ">
+                    <option value="">dТО</option>
+                    <option value="">jdjddj</option>
+                </optgroup>
+            </select>
+        </label>
+
+        <p>Другий варіант реалізації</p>
+        <select size="3">
+            <option disabled>Оберіть свою групу</option>
+            <option>Андрієнко Максим</option>
+            <option>Баришев Ярослав</option>
+            <option>Власова Наталія</option>
+            <option>Глітко Богдан</option>
+            <option>Зданєвич Світлана</option>
+            <option>Іванцов Олексій</option>
+            <option>Коваленко Даниіл</option>
+            <option>Компанієць Михайло</option>
+            <option>Константінов Владислав</option>
+            <option>Кривенко Нікіта</option>
+            <option>Невдачин Михайло</option>
+            <option>Носов Іван</option>
+            <option>Підгорний Борис</option>
+            <option>Погорілий Андрій</option>
+            <option>Прохоров Микита</option>
+            <option>Рогова Єлізавєта</option>
+            <option>Савченко Богдан</option>
+            <option>Сердюк Андрій</option>
+            <option>Скуін-Стедлєр Едуард</option>
+            <option>Соловйова Еліна</option>
+            <option>Сподін Максим</option>
+            <option>Тірон Андрій</option>
+        </select>
+
+        <!-- -->
+        <h4 style="text-align: center">Завдання третє</h4>
+        <table border="3" width="600px">
+            <caption></caption>
+
+            <thead align="center">
+                <tr>
+                    <th>Назва розділу</th>
+                    <th>Сторінка</th>
+                </tr>
+            </thead>
+            <tbody align="center">
+                <tr>
+                    <td>Вступ до програмування</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Історія та можливості мови C++</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Налаштування середовища розробки</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Основні типи даних і змінні</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Оператори та вирази</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>Умовні конструкції (if, switch)</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Цикли (for, while, do-while)</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>Функції та передача параметрів</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <td>Масиви та рядки</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>Вказівники та динамічна пам’ять</td>
+                    <td>110</td>
+                </tr>
+                <tr>
+                    <td>Структури та об’єднання</td>
+                    <td>130</td>
+                </tr>
+                <tr>
+                    <td>Класи та об’єктно-орієнтоване програмування</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>Cпадкування та поліморфізм</td>
+                    <td>180</td>
+                </tr>
+                <tr>
+                    <td>Робота з файлами</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>Обробка винятків</td>
+                    <td>220</td>
+                </tr>
+                <tr>
+                    <td>Стандартна бібліотека шаблонів STL</td>
+                    <td>240</td>
+                </tr>
+                <tr>
+                    <td>Завершення та подальші кроки у навчанні</td>
+                    <td>260</td>
+                </tr>
+            </tbody>
+            <tfoot align="center">
+                <tr>
+                    <td>Всього</td>
+                    <td>264 стр</td>
+                </tr>
+            </tfoot>
+        </table>
+        <!--  -->
+        <h4 style="text-align: center">Завдання четверте</h4>
+
+        <form method="post"
+            class="form-regestration"
+            style="
+                align-content: center;
+                flex-direction: column;
+                display: flex;
+                width: 200px;
+                gap: 20px;
+                border: 2px solid;
+                border-radius: 5px;
+                padding: 8px;
+            "
+        >
+            <label for="lastname"
+                >Введіть своє Прізвище
+                <input type="text" id="lastname" name="lastname" placeholder="Прізвище" required /><sup>*</sup>
+            </label>
+            <label for="firstname">
+                <input type="text" id="firstname" name="firstname" placeholder="Ім'я " required /><sup>*</sup>
+            </label>
+            <label for="patronymic">
+                Введіть своє по батькові
+                <input type="text" id="patronymic" name="patronymic" placeholder="По батькові " required /><sup>*</sup>
+            </label>
+            <label for="email">
+                Введіть свій особистий email у вигляді - @gmail.com
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required /><sup>*</sup>
+            </label>
+            <label for="password">
+                Введіть свій особистий пароль у вигляді - 34Аdfdf/
+                <input type="password" id="password" placeholder="password" /><sup>*</sup>
+            </label>
+            <label for="age">
+                Введіть свій вік
+                <input type="number" name="age" id="age" placeholder="" min="16" max="50" />
+            </label>
+            <label for="gender1" for="gender2"> Вкажіть свою стать М\Ж-- </label>
+            <label> <input type="radio" value="female" name="gender" id="gender1" />Жіноча</label>
+            <label> <input type="radio" value="male" name="gender" id="gender2" />Чоловіча</label>
+            <label> <input type="checkbox" name="newsletter" />Підписатись на новини </label>
+            <label for="city">
+                Місто
+                <select id="city">
+                    <option value="kha">Харків</option>
+                    <option value="kiy">Київ</option>
+                    <option value="odes">Одеса</option>
+                    <option value="lviv">Львів</option>
+                    <option value="poltava">Полтава</option>
+                    <option value="sumi">Суми</option>
+                </select>
+            </label>
+            <label for="university">
+                Університет
+                <select id="university">
+                    <option value="khnyre">ХНУРЕ</option>
+                    <option value="kpi">КПІ</option>
+                    <option value="lpy">ЛПУ</option>
+                    <option value="khney">ХНЕУ</option>
+                    <option value="khai">ХАІ</option>
+                    <option value="kney">КНЕУ</option>
+                </select>
+            </label>
+            <label for="ocupation">
+                Оберіть свою спеціальність
+                <select id="ocupation">
+                    <option value="ki">КІ</option>
+                    <option value="sd">ІПЗ</option>
+                    <option value="cs">КН</option>
+                    <option value="info">ІНФ</option>
+                    <option value="">ХАІ</option>
+                    <option value="">Харків</option>
+                </select>
+            </label>
+            <label for="courses">
+                Оберіть курс на якому навчаєтесь
+                <select id="courses">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </label>
+            <label for="English">
+                Оберіть свій ріввень анг мови
+                <select id="English">
+                    <option value="a1">А1</option>
+                    <option value="a2">А2</option>
+                    <option value="b1">В1</option>
+                    <option value="b2">В2</option>
+                    <option value="c1">С1</option>
+                    <option value="c2">С2</option>
+                </select>
+            </label>
+            <label for="Program">
+                Оберіть мову програмування яку вивчаєте поглиблено
+                <select id="Program">
+                    <option value="c++">C++</option>
+                    <option value="c#">C#</option>
+                    <option value="java">JAVA</option>
+                    <option value="js">JS</option>
+                    <option value="php">PHP</option>
+                    <option value="python">Python</option>
+                </select>
+            </label>
+            <label for="work">
+                Направлення за яким бажаєте працювати
+                <select id="work">
+                    <option value="web">WEB</option>
+                    <option value="game">GAME</option>
+                    <option value="pm">PM</option>
+                    <option value="test">TESTING</option>
+                    <option value="design">DESIGN</option>
+                    <option value="bm">BM</option>
+                </select>
+            </label>
+            <label>
+                Оберіть сьогоднішню дату заповнення форми
+                <input type="date" name="date" />
+            </label>
+            <label for="textarea" >
+                <textarea rows="4">
+
+                </textarea>
+            </label>
+            <div>
+                <input type="submit" value="Надіслати дані" />
+                <input type="reset" value="Скинути дані" />
+            </div>
+        </form>
+        <!----->
+        <h4 style="text-align: center">Завдання п'яте</h4>
+        <a href="LR1/about.html#about">ПРО НАС</a>
+        <a href="LR1/about.html#about-page" >ПРО НАШУ ДІЯЛЬНІСТЬ</a>
+    </body>
+</html>
